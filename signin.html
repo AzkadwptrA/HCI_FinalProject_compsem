@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/sign-in-up.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Quizicle!</a>
+    </header>
+    <section>
+        <div class="container">
+            <div class="box">
+                <div class="box-login" id="login">
+
+                    <div class="top-header">
+                        <h3>Hello, Again!</h3>
+                        <small>We are happy to have you back.</small>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-field">
+                            <input type="text" class="input-box" id="logEmail" required>
+                            <label for="logEmail">Email Address</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="input-box" id="logPassword" required>
+                            <label for="logPassword">Password</label>
+                            <div class="eye-area">
+                                <div class="eye-box" onclick="myLogPassword()">
+                                    <i class="fa-regular fa-eye" id="eye"></i>
+                                    <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="remember">
+                            <input type="checkbox" id="formcheck" class="check">
+                            <label for="formcheck"> Remember Me</label>
+                        </div>
+                        <div class="input-field">
+                            <form action="#">
+                                <input type="submit" class="input-submit" value="Sign In">
+                            </form>
+                        </div>
+                        <div class="forgot">
+                                <a href="#">Forget password?</a>
+                                <br>
+                                <a href="signup.html">Don't have an account?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="loader"></div>
+<script src="javascript/sign-in-up.js"></script>
+</body>
+</html>
